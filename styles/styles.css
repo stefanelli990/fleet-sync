@@ -54,7 +54,7 @@ a {
   text-decoration: none;
 }
 
-.btn, .login .social-networks a, .get-started .social-networks a {
+.btn, .login .social-networks a, .get-started .social-networks a, .phone-number .social-networks a {
   display: inline-block;
   background-color: #067AFF;
   color: #fff;
@@ -218,7 +218,7 @@ form input:valid ~ .label {
   visibility: hidden;
 }
 
-.login header, .get-started header {
+.login header, .get-started header, .phone-number header {
   padding: 5rem 2rem 2.5rem;
   max-width: 600px;
   width: 100%;
@@ -226,29 +226,29 @@ form input:valid ~ .label {
   text-align: center;
 }
 
-.login header h1, .get-started header h1 {
+.login header h1, .get-started header h1, .phone-number header h1 {
   line-height: 1.4;
   font-weight: 900;
 }
 
-.login header .forgot-password, .get-started header .forgot-password {
+.login header .forgot-password, .get-started header .forgot-password, .phone-number header .forgot-password {
   font-size: 0.9rem;
 }
 
-.login .divider, .get-started .divider {
+.login .divider, .get-started .divider, .phone-number .divider {
   padding: 0 2rem;
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
 }
 
-.login .divider p, .get-started .divider p {
+.login .divider p, .get-started .divider p, .phone-number .divider p {
   overflow: hidden;
   text-align: center;
   margin-bottom: 0;
 }
 
-.login .divider p::before, .get-started .divider p::before, .login .divider p::after, .get-started .divider p::after {
+.login .divider p::before, .get-started .divider p::before, .phone-number .divider p::before, .login .divider p::after, .get-started .divider p::after, .phone-number .divider p::after {
   background-color: #E5E5E5;
   content: "";
   display: inline-block;
@@ -258,25 +258,25 @@ form input:valid ~ .label {
   width: 50%;
 }
 
-.login .divider p::before, .get-started .divider p::before {
+.login .divider p::before, .get-started .divider p::before, .phone-number .divider p::before {
   right: 1rem;
   margin-left: -50%;
 }
 
-.login .divider p::after, .get-started .divider p::after {
+.login .divider p::after, .get-started .divider p::after, .phone-number .divider p::after {
   left: 1rem;
   margin-right: -50%;
   z-index: -1;
 }
 
-.login .social-networks, .get-started .social-networks {
+.login .social-networks, .get-started .social-networks, .phone-number .social-networks {
   padding: 3rem 2rem;
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
 }
 
-.login .social-networks a, .get-started .social-networks a {
+.login .social-networks a, .get-started .social-networks a, .phone-number .social-networks a {
   padding: 0.75rem 0.75rem 0.75rem 1rem;
   background-color: #F3F9FF;
   border: 1px solid #F3F9FF;
@@ -289,13 +289,13 @@ form input:valid ~ .label {
           align-items: center;
 }
 
-.login .social-networks .icons, .get-started .social-networks .icons {
+.login .social-networks .icons, .get-started .social-networks .icons, .phone-number .social-networks .icons {
   height: 2rem;
   width: 2rem;
   margin-right: 0.5rem;
 }
 
-.get-started header {
+.get-started header, .phone-number header {
   padding: 5rem 2rem 1rem;
   max-width: 600px;
   width: 100%;
@@ -316,8 +316,12 @@ form input:valid ~ .label {
           align-items: center;
 }
 
-.get-started h2 {
+.get-started h2, .phone-number h2 {
   margin: 1rem 0;
+}
+
+.phone-number input {
+  margin-bottom: 2rem;
 }
 
 footer {

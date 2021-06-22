@@ -5,6 +5,7 @@
 @import 'inputs';
 @import 'checkbox';
 
+
 //chevron
 .chevron {
     position: absolute;
@@ -112,6 +113,17 @@
       h2 {
           margin: 1rem 0;
       }  
+  }
+
+
+  // phone number page
+  .phone-number {
+      @extend .get-started;
+     input {
+         margin-bottom: 2rem;
+     }
+      
+   
   }
 
 
