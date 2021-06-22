@@ -1,0 +1,46 @@
+//resets
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+html {
+    font-size: 0.9rem;
+    @include sm {
+        font-size: 1rem;
+    }
+}
+
+body {
+    color: $dark-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+   
+}
+
+h1, h2, h3, p {
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.17rem;
+}
+
+a {
+    color: $dark-blue;
+    text-decoration: none;
+}

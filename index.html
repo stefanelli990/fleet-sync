@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>FleetSync</title>
+</head>
+<body>
+
+  <!-- loader -->
+<div class="loader">
+    <h1>FleetSync</h1>
+</div>
+    
+<!-- login page -->
+  <main class="login">
+<header>
+    <h1>Welcome to<br>FleetSync</h1>
+</header>
+
+<form class="contact-form" name="contact-form">
+    <div class="input-field">
+      <input name="name" type="text" id="name" required autocomplete="off"/>
+      <label class="label" for="name">Email</label>
+    </div>
+    <div class="input-field">
+      <input name="password" type="text" id="password" required autocomplete="off"/>
+      <label class="label" for="password">Password</label>
+    </div>
+ 
+    <div class="checkbox-container">
+        <input type="checkbox" id="css">
+        <label for="css">Remember me</label>
+      </div>
+
+    <button class="btn" type="submit">Sign In</button>
+    <a href="#" class="forgot-password">Forgot password?</a>
+  </form>
+
+  <div class="divider">
+      <p>Or</p>
+  </div>
+
+  <section class="social-networks">
+      <a href="#"><img src="assets/google.svg" alt="" class="icons">Continue with Google</a>
+      <a href="#"><img src="assets/instagram.svg" alt="" class="icons">Continue with Instagram</a>
+      <a href="#"><img src="assets/apple.svg" alt="" class="icons">Continue with Apple</a>
+  </section>
+</main>
+
+<!-- footer -->
+  <footer>
+      <span>Don’t have an account? <a href="get-started.html">Sign Up</a></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

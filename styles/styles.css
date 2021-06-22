@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+html {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+body {
+  color: #4E6B8E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100vh;
+}
+
+h1, h2, h3, p {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+a {
+  color: #4E6B8E;
+  text-decoration: none;
+}
+
+.btn, .login .social-networks a, .get-started .social-networks a {
+  display: inline-block;
+  background-color: #067AFF;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.75rem;
+  width: 100%;
+  border: 1px solid #067AFF;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+form {
+  padding: 0 2rem 3rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form .input-field {
+  position: relative;
+}
+
+form .label {
+  position: absolute;
+  top: 0.75rem;
+  left: 1.25rem;
+  color: #afafaf;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+form input {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  padding: 0.75rem;
+  width: 100%;
+  border: 1px solid #E5E5E5;
+  border-radius: 10px;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #4E6B8E;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+form input:invalid {
+  outline: 0;
+}
+
+form input:focus, form input:valid {
+  border: 1px solid #067AFF;
+}
+
+form input:focus ~ .label,
+form input:valid ~ .label {
+  top: -0.8rem;
+  left: 1rem;
+  color: #067AFF;
+  font-size: 0.9rem;
+  padding: 0.1rem;
+  background-color: #fff;
+}
+
+.checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0 2rem;
+}
+
+.checkbox-container input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.checkbox-container label {
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkbox-container label:before {
+  content: '';
+  background-color: transparent;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+  padding: 12px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.checkbox-container input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 6px;
+  height: 12px;
+  border: solid #0079bf;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.chevron {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #067AFF;
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  z-index: 800;
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loader.active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.login header, .get-started header {
+  padding: 5rem 2rem 2.5rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login header h1, .get-started header h1 {
+  line-height: 1.4;
+  font-weight: 900;
+}
+
+.login header .forgot-password, .get-started header .forgot-password {
+  font-size: 0.9rem;
+}
+
+.login .divider, .get-started .divider {
+  padding: 0 2rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.login .divider p, .get-started .divider p {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.login .divider p::before, .get-started .divider p::before, .login .divider p::after, .get-started .divider p::after {
+  background-color: #E5E5E5;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.login .divider p::before, .get-started .divider p::before {
+  right: 1rem;
+  margin-left: -50%;
+}
+
+.login .divider p::after, .get-started .divider p::after {
+  left: 1rem;
+  margin-right: -50%;
+  z-index: -1;
+}
+
+.login .social-networks, .get-started .social-networks {
+  padding: 3rem 2rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.login .social-networks a, .get-started .social-networks a {
+  padding: 0.75rem 0.75rem 0.75rem 1rem;
+  background-color: #F3F9FF;
+  border: 1px solid #F3F9FF;
+  color: #4E6B8E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .social-networks .icons, .get-started .social-networks .icons {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+.get-started header {
+  padding: 5rem 2rem 1rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.get-started h2 {
+  margin: 1rem 0;
+}
+
+footer {
+  padding: 1rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer a {
+  color: #067AFF;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=styles.css.map */

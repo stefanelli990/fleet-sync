@@ -1,0 +1,127 @@
+@import 'variables';
+@import 'mixins';
+@import 'resets';
+@import 'utilities';
+@import 'inputs';
+@import 'checkbox';
+
+//chevron
+.chevron {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+//loader
+.loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: $primary;
+    color: $light;
+	height: 100vh;
+	width: 100%;
+	z-index: 800;
+	opacity: 1;
+	transition: .5s;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    &.active {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+// login page
+.login {
+    header {
+        @include container(5rem 2rem 2.5rem, 600px);
+        text-align: center;
+        h1 {
+            line-height: 1.4;
+            font-weight: 900;
+        }
+        .forgot-password {
+                font-size: 0.9rem;
+        }
+    }
+
+      .divider {
+          @include container(0 2rem, 600px);
+          p {
+            overflow: hidden;
+            text-align: center;
+            margin-bottom: 0;
+            &::before, &::after {
+                background-color: $light-grey;
+                content: "";
+                display: inline-block;
+                height: 1px;
+                position: relative;
+                vertical-align: middle;
+                width: 50%;
+            }
+            &::before {
+                right: 1rem;
+                margin-left: -50%;
+            }
+            &::after {
+                left: 1rem;
+                margin-right: -50%;
+                z-index: -1;
+            }
+          }
+      }
+    
+      .social-networks {
+          @include container(3rem 2rem, 600px);
+          a {
+              @extend .btn;
+              padding: 0.75rem 0.75rem 0.75rem 1rem;
+              background-color: $light-blue;
+              border: 1px solid $light-blue;
+              color: $dark-blue;
+              display: flex;
+              align-items: center;
+          }
+          .icons {
+              height: 2rem;
+              width: 2rem;
+              margin-right: 0.5rem;
+          }
+      }
+}
+
+
+
+// get started page
+.get-started {
+      @extend .login;
+      header {
+        @include container(5rem 2rem 1rem, 600px);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      h2 {
+          margin: 1rem 0;
+      }  
+  }
+
+
+
+// footer
+  footer {
+    @include container(1rem, 600px);
+    text-align: center;
+    a {
+        color: $primary;
+        text-decoration: underline;
+    }
+  }
