@@ -340,6 +340,40 @@ form input:valid ~ .label {
   font-size: 0.9rem;
 }
 
+.verification .digits-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 600px) {
+  .verification .digits-container {
+    grid-gap: 1rem;
+  }
+}
+
+.verification .digits {
+  border: 1px solid #E5E5E5;
+  font-size: 1.5rem;
+  padding: 1rem;
+  height: 50px;
+  width: 50px;
+}
+
+.verification .digits:focus {
+  border: 1px solid #067AFF;
+}
+
+.verification p a {
+  text-decoration: underline;
+}
+
 footer {
   padding: 1rem;
   max-width: 600px;
