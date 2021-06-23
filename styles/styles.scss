@@ -36,11 +36,16 @@
     }
 }
 
+main {
+    @include container(0 2rem, 600px);
+    text-align: center;
+    position: relative;
+}
+
 // login page
 .login {
     header {
-        @include container(5rem 2rem 2.5rem, 600px);
-        text-align: center;
+        @include container(3rem 0 , 600px);
         h1 {
             line-height: 1.4;
             font-weight: 900;
@@ -51,7 +56,7 @@
     }
 
       .divider {
-          @include container(0 2rem, 600px);
+          @include container(0, 600px);
           p {
             overflow: hidden;
             text-align: center;
@@ -78,7 +83,7 @@
       }
     
       .social-networks {
-          @include container(3rem 2rem, 600px);
+          @include container(4rem 0, 600px);
           a {
               @extend .btn;
               padding: 0.75rem 0.75rem 0.75rem 1rem;
@@ -102,8 +107,8 @@
 .get-started {
       @extend .login;
       header {
-        @include container(5rem 2rem 1rem, 600px);
-        position: relative;
+        @include container(5rem 0 1rem, 600px);
+      
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -168,6 +173,12 @@
         }
       }
       
+  }
+
+
+  //sign up completed page
+  .completed {
+      @extend .get-started;
   }
 
 

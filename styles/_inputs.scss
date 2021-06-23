@@ -2,7 +2,7 @@
 
 form {
     
-    @include container(2rem, 600px);
+    @include container(0 0 4rem, 600px);
     text-align: center;
     .input-field {
       position: relative;
