@@ -5,7 +5,6 @@
 @import 'inputs';
 @import 'checkbox';
 
-
 //chevron
 .chevron {
     position: absolute;
@@ -119,11 +118,31 @@
   // phone number page
   .phone-number {
       @extend .get-started;
-     input {
-         margin-bottom: 2rem;
-     }
+      
+      #login > div {
+          width: 100%;
+          margin-bottom: 1.5rem;
+          input {
+            border: 1px solid $light-blue ;
+            background-color: $light-blue ;
+            padding-left: 4.5rem;
+        }
+      }
+      #login > div > div {
+          left: 1rem;
+      }
+      #login > p {
+          margin-bottom: 0.5rem;
+          font-size: 0.9rem;
+      }
       
    
+   
+  }
+
+  // verification page 
+  .verification {
+      @extend .get-started;
   }
 
 
